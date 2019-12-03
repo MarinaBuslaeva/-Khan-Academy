@@ -1,0 +1,19 @@
+var hamX = 48;
+var hamY = 235;
+    draw = function() {
+        background (8, 8, 8);
+        fill(189, 11, 11);
+        textSize(53);
+        text("Steel hammer", 3, 97);
+        textSize(21);
+        text("In any situation!", 220, 247);
+        textSize (16);
+        text ("Use it always!", 10, 381);
+        fill (140, 122, 122);
+        rect (hamX, hamY, 9, 109);
+        rect (hamX-27, hamY-46, 64, 49, 14);
+        fill (255, 0, 0);
+        ellipse (hamX+5, hamY-19, 15, 17);
+        hamX+=1;
+    };
+ 
