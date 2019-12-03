@@ -1,0 +1,27 @@
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+fill(60, 0, 255);
+triangle(200, 104, 280, 280, 120, 280);
+fill(255, 255, 255);
+var answer = floor(random(1, 5));
+if (answer >= 1 && answer < 2) {
+    fill (237, 245, 3);
+    textSize (15);
+    text("Just", 186, 200);
+    text("Do it!", 182, 229); 
+} else if (answer >= 2 && answer < 3) {
+    fill (240, 136, 162);
+    textSize (15);
+    text("The answer", 160, 213);
+    text("will come later", 152, 229);
+} else if (answer >= 3 && answer < 4) {
+    fill (23, 207, 23);
+    textSize (15);
+    text("Gods", 186, 200);
+    text("abandoned you", 149, 229); 
+} else {
+    fill (240, 163, 115);
+    textSize (15);
+    text("Gods", 183, 200);
+    text("favor you!", 171, 229);
+}
