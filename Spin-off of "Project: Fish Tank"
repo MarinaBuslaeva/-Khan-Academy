@@ -1,0 +1,50 @@
+background(89, 216, 255);
+var drawFish = function () {
+var centerX =  random (400);
+var centerY = random (400);
+var bodyLength = 118;
+var bodyHeight = 74;
+var bodyColor = color(162, 0, 255);
+
+
+    fill(bodyColor);
+    // body
+    fill (194, 94, 199);
+    ellipse(centerX, centerY, bodyLength, bodyHeight);
+    // tail
+    var tailWidth = bodyLength/6;
+    var tailHeight = bodyHeight/1;
+    fill (245, 116, 3);
+    triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+    // eye
+    fill(33, 33, 33);
+    ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};
+fill (3, 66, 8);
+rect (7, 402, 5, -350);
+rect (27, 402, 5, -350);
+rect (55, 402, 5, -350);
+rect (274, 402, 5, -350);
+rect (307, 402, 5, -350);
+rect (328, 402, 5, -350);
+
+
+
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+drawFish ();
+
+mouseClicked = function (){
+    drawFish ();
+};
