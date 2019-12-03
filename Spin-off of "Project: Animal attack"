@@ -1,0 +1,45 @@
+var bodyX = 200;
+var bodyY = 220;
+var bodyW = 171;
+var bodyH = bodyW/2;
+var eyeSize = 10;
+var clawTooth = bodyY-30;
+
+draw = function() {
+    background(207, 254, 255);
+    fill(240, 209, 36);
+    ellipse(bodyX, bodyY, bodyW, 153); // body
+    ellipse(bodyX, bodyY-70, bodyH, 97); // face
+    triangle (bodyX-13, bodyY-116, bodyX-38, bodyY-92, bodyX-57, bodyY-144); // earLeft
+    triangle (bodyX+13, bodyY-116, bodyX+38, bodyY-92, bodyX+57, bodyY-144); // earRight
+    ellipse (bodyX+52, bodyY+71, 51, 32); // rightLeg
+    ellipse (bodyX-40, bodyY+71, 51, 32); // leftLeg
+    ellipse (bodyX-40, bodyY-11, 38, 31); // leftHand
+    ellipse (bodyX+44, bodyY-11, 38, 31); // rightHand
+    fill (10, 9, 9);
+    ellipse (bodyX+20, bodyY-74, eyeSize, eyeSize); // eyeRight
+    ellipse (bodyX-17, bodyY-74, eyeSize, eyeSize); // eyeLeft
+    ellipse (bodyX+2, bodyY-49, 14, 10); // nose
+    fill (227, 139, 139);
+    arc (bodyX+2, bodyY-40, 29,22, 36,146); // mouth
+    ellipse (bodyX-40, bodyY-4, 26, 10); // aroliumBigLeft
+    ellipse (bodyX+44, bodyY-4, 26, 10); // aroliumBigRight
+    ellipse (bodyX-50, bodyY-15, 10, 10); // aroliumSmallLeftLeft
+    ellipse (bodyX-39, bodyY-18, 10, 10); // aroliumSmallMiddleLeft
+    ellipse (bodyX-29, bodyY-15, 10, 10); // aroliumSmallRightLeft
+    ellipse (bodyX+35, bodyY-15, 10, 10); // aroliumSmallLeftRight
+    ellipse (bodyX+45, bodyY-18, 10, 10); // aroliumSmallMiddleRight
+    ellipse (bodyX+56, bodyY-14, 10, 10); // aroliumSmallrightRight
+    fill (250, 242, 242);
+    triangle (bodyX-4, bodyY-36, bodyX+1, bodyY-39, bodyX-1, clawTooth); // toothLeft
+    triangle (bodyX+8, bodyY-36, bodyX+4, bodyY-39, bodyX+5, clawTooth); // toothRight
+    triangle (bodyX-55, bodyY-17, bodyX-46, bodyY-18, bodyX-53, clawTooth); // clawLeftLeft
+    triangle (bodyX-44, bodyY-22, bodyX-36, bodyY-21, bodyX-41, clawTooth); // clawLeftMiddle
+    triangle (bodyX-35, bodyY-18, bodyX-25, bodyY-19, bodyX-29, clawTooth); // clawLeftRight
+    triangle (bodyX+30, bodyY-17, bodyX+38, bodyY-20, bodyX+31, clawTooth); // clawRightLeft
+    triangle (bodyX+42, bodyY-21, bodyX+49, bodyY-21, bodyX+45, clawTooth); // clawRightMiddle
+    triangle (bodyX+53, bodyY-18, bodyX+61, bodyY-18, bodyX+61, clawTooth); // clawRightRight
+eyeSize++;
+clawTooth++;
+
+};
