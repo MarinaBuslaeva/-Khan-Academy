@@ -1,0 +1,28 @@
+var xPos = 271;
+var yPos = 119;
+var xStar = 40;
+var yStar = 80;
+var x1 = 13;
+var y1 =37;
+var z1 =39;
+var down1 =121;
+var down2 =228;
+draw = function() {
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10);
+    xPos+=1;
+    yPos-=1;
+    ellipse (xStar, yStar, 20, 20);
+    xStar--;
+    yStar++;
+    triangle (32,y1,15,x1,7,z1);
+    x1++;
+    y1++;
+    z1++;
+    ellipse (down1, down2, 18,18);
+    down2++;
+    
+    
+    
+};
